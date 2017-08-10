@@ -1,0 +1,56 @@
+{
+  "name": "graphql-dataloader-server-example",
+  "version": "1.0.0",
+  "description": "GrahpQL - Dataloader server example with express and mongoose in ES6",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "build": "npm run clean:dist && babel src --out-dir dist --ignore spec.js,test.js",
+    "clean:dist": "rimraf dist",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enesTufekci/graphql-dataloader-server-example"
+  },
+  "keywords": [
+    "GraphQL",
+    "Express",
+    "Mongoose",
+    "Babel",
+    "ES6",
+    "Dataloader",
+    "Airbnb"
+  ],
+  "author": "Enes Tufekci <enesxtufekci@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enesTufekci/graphql-dataloader-server-example/issues"
+  },
+  "homepage": "https://github.com/enesTufekci/graphql-dataloader-server-example#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "dataloader": "^1.3.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "graphql": "^0.10.5",
+    "graphql-server-express": "^1.1.0",
+    "helmet": "^3.8.1",
+    "jsonwebtoken": "^7.4.2",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.11.6",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
+}
